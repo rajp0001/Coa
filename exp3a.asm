@@ -1,0 +1,37 @@
+HEX To BCD
+DATA SEGMENT
+    X DB 0B2H
+    DB 100 DUP (00)
+
+DATA ENDS
+
+CODE SEGMENT
+
+ASSUME CS: CODE, DS: DATA
+
+START:
+    MOV AX, DATA
+    MOV DS, AX
+
+    MOV AX, 0000H
+    MOV BX, 0000H
+
+    MOV AL, X
+    MOV CL, 0AH
+
+REPEAT:
+    DIV CL
+    MOV [BX+8], AH
+    INC BX
+
+    MOV AH, 00H
+    CMP AL, CL
+    JNC REPEAT
+
+    MOV [BX+8], AL
+
+    INT 3H
+
+CODE ENDS
+
+END START
