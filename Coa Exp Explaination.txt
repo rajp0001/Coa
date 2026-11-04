@@ -1,0 +1,18 @@
+Exp1 - Alu operation add,mul etc 
+Use debug then t
+Exp2 - Flag status 
+Use filename.exe
+Exp3 - HEX to BCD
+ASCII to BCD
+Use TD Filename.exe
+Exp4 - BCD addition 
+Use filename.exe
+Exp5 - block transfer and block exchange 
+Use Debug filename.exe, and d and ds:0
+Exp6 - is it palindrome or not 
+Use filename.exe
+Exp7 - it is cursor use filename.exe
+Exp8 - password 
+Use debug filename.exe
+Exp9 - booths algorithm 
+Use TD filename.exe
